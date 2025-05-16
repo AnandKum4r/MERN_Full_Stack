@@ -1,0 +1,24 @@
+Nginx (pronounced as "engine-x") is a high-performance, open-source web server that is also used as a:
+🔹 Reverse proxy
+🔹 Load balancer
+🔹 HTTP cache
+🔹 Media streaming server
+
+🔄 How Nginx Works Internally
+Nginx is event-driven, not thread-based. That means:
+🧵 It doesn’t create a new thread for each connection (like Apache does)
+⚙️ It uses a main event loop that can handle thousands of connections at once, efficiently
+💡 That’s why it uses low memory and scales better under heavy traffic
+
+🔧 What Does Nginx Do?
+Imagine you're hosting a website. When users open your site:
+➡️ Nginx handles their HTTP requests
+➡️ It delivers HTML pages, images, CSS, JS, and more
+➡️ It can forward requests to backend servers like Node.js, Python (Django/Flask), PHP, etc.
+
+⚙️ Common Use Cases
+✅ Serve static websites
+✅ Host dynamic apps (via reverse proxy to Node.js, Python, etc.)
+✅ Act as SSL/TLS terminator
+✅ Load balancing traffic between multiple servers
+✅ Improve performance with caching

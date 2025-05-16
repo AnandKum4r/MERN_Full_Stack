@@ -1,0 +1,27 @@
+✅ What is Node.js?
+🟢 Node.js is a JavaScript runtime built on Chrome’s V8 engine.
+It lets you run JavaScript code outside the browser, like on a server.
+
+💡 Key Features:
+🔹 Non-blocking I/O (Asynchronous)
+➡️ Handles many requests at once without waiting.
+
+🔹 Single-threaded, Event-driven
+➡️ Fast and efficient for I/O-heavy tasks (like reading from files, APIs, databases).
+
+🔹 Uses JavaScript
+➡️ Same language for both frontend and backend!
+
+🔹 NPM (Node Package Manager)
+➡️ Access thousands of open-source packages.
+
+🛠️ Common Use Cases:
+REST APIs 🌐
+
+Real-time apps (like chat) 💬
+
+CLI tools 💻
+
+Microservices 🔗
+
+Server-side rendering 🖥️
