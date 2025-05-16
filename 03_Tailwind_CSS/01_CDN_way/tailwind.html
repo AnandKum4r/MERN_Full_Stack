@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <style>
+        body {
+            background-color: #272727;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- If we do with CDN path then there will be no suggestion in VS code -->
+    <!-- 
+    So we have to use Tailwind CLI always.We have to install some more...
+        1)For this first download and install node.js
+        2)Now Set the path for Node.js
+            Step1- Go to C-drive where nodejs is installed and copy that path
+            Step2- Now search env in windows and then:
+                    >go to Environment Variable..
+                    >then double click on path then New options and paste the nodejs copied path here 
+        3)Go to terminal run these cmd to set path:
+            Step1- Run this command: set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+            Step2- Run this command to check: get-ExecutionPolicy
+            Step3- Run this command in last: get-ExecutionPolicy -list
+            
+        4)Now run this command to initialization of the project: npm init -y
+            >This will generate package.json file
+        5)Now go to tailwind documentation then Tailwind CLI and follow fiven steps and command
+            Step1- Run this: npm install -D tailwindcss
+            Step2- Run this: npx tailwindcss init
+                This will creates new file tailwind.config.js go into this file and set path in Content[]
+    -->
+    <h1 class="underline text-red-800 bg-indigo-500">Hello World</h1>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Master Class tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Equal Section Divison -->
+
+    <!-- <div class="grid gap-2 m-4 grid-cols-2 sm:grid-cols-2">
+      <div class="min-h-[100px] rounded-lg shadow bg-orange-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-teal-500"></div>
+    </div> -->
+
+    <!-- <div class="grid gap-2 m-4 sm:grid-cols-4">
+        <div class="min-h-[100px] rounded-lg shadow bg-orange-500"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-teal-500"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-red-500"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-purple-500"></div>
+    </div> -->
+
+    <!-- Non-Equal Divison -->
+     <!-- sm se jo start hua hai wo bigger screen ke liye hai -->
+      <!-- sm- means smaller and above screen -->
+       <!-- always start with smaller and above screen others will automatically done -->
+      <!-- smaller screen ke liye direct properties use krna hai -->
+
+      <!-- Always thinks for smaller screen perspetive but do things for bigger screen-Thats called as smaller and above  -->
+
+    <!-- <div class="grid gap-2 m-4 sm:grid-cols-12 grid-cols-1">
+        <div class="min-h-[100px] rounded-lg shadow bg-orange-500 sm:col-span-2"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-teal-500 sm:col-span-10"></div>
+    </div> -->
+
+    <!-- Tailwind UI -->
+    <div class="grid gap-2 m-4 sm:grid-cols-12">
+        <div class="sm:col-span-2 min-h-[100px] rounded-lg shadow bg-orange-500 sm:block hidden"></div>
+        <div class="sm:col-span-8 min-h-[100px] rounded-lg shadow bg-teal-500 "></div>
+        <div class="sm:col-span-2 min-h-[100px] rounded-lg shadow bg-purple-500 sm:block hidden"></div>
+    </div>
+</body>
+
+</html>
