@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #c2c1c1;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.box:nth-child(even) {
+  background-color: #e74c3c;
+  
+}

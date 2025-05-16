@@ -1,0 +1,93 @@
+/* 1. Universal Selector: It will be applied on all over 
+   browser and it will remove browser defaults css 
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* 2. Type Selector: Selected by its name directly */
+p {
+  font-size: 16px;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
+  /* margin/padding in four direction goes clockwise: Top-Right-Bottom-Left 
+        Padding-Inner Space
+        Margin-Outer Space
+ */
+}
+
+body {
+  background-color: #d59898ac;
+}
+
+/* 3. Class Selector: Class is Selected by dot(.) symbol */
+.highlight {
+  background-color: #117c91;
+}
+
+/* 4. ID Selector: ID is selected by hastag(#) symbol */
+#header {
+  background-color: #27b16ac6;
+  /* tips: Always use color by #value do not use color like red 
+     green etc to avoid inconsitency becox each browser show different shades 
+  */
+}
+
+/* 5. Attribute Selector: This selector is selected by using 
+   Square[] bracket to select any specific attributes */
+input[type="text"] {
+  /* border: 5px dashed #8f9811; */
+  border: 2px solid #be0b53;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+/* 6. Descendant Selector: descendant selector is used to select all elements 
+that are descendants of a specified element. It is represented by a space between 
+two selectors.
+*/
+article p {
+  font-style: italic;
+  background-color: #424242;
+  color: #09f401;
+  padding: 10px;
+}
+
+/* 7. Child Selector */
+div > p {
+  background-color: #b51068;
+}
+
+/* 8. Adjacent Sibling Selector */
+h1 + p {
+  font-weight: bold;
+}
+
+/* 9. General Sibling Selector */
+h2 ~ p {
+  color: #dc1b6b;
+}
+
+/* 10. Pseudo-class Selector */
+a:hover {
+  background-color: #10ddec;
+  text-decoration: none;
+  color: #1a2525;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* 11. Pseudo-element Selector */
+p::first-letter {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* 12. Grouping Selector */
+h1,
+h2,
+h3 {
+  color: #8e9620;
+}

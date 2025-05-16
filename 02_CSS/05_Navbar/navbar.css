@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #e8ecef;
+}
+.nav-container{
+    margin-bottom: 40px;
+    /* border: 2px solid red; */
+}
+h2{
+    margin-bottom: 10px;
+}
+.nav1{
+    /* border: 2px solid yellow; */
+    background-color: #ececec;
+    padding: 10px;
+}
+.nav1 ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 5px 15px;
+    justify-content: space-around;
+}
+.nav1 li{
+    display: inline;
+}
+.nav1 a{
+    text-decoration: none;
+    color: #242020;
+    /* background-color: #ef7213; */
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: relative;
+}
+.nav1 a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #ff1717;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.nav1 a:hover::after{
+    transform: scaleX(1);
+}
+.nav1 .login-btn{
+    background-color: #1034c3;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav2{
+    background-color: #138682;
+    width: 200px;
+    padding: 20px;
+}
+.nav2 ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav2 li{
+    margin-bottom: 12px;
+}
+.nav2 a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+.nav2 a:hover{
+    background-color: #0a5e64;
+}
+.nav2 .login-btn{
+    background-color: #075c3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    width: 100%;
+    cursor: pointer;
+}
+.nav2 .login-btn:hover{
+    background-color: #033b0f;
+    border: 1px solid #fff;
+}
+
+.nav3 {
+    background-color: #071e5c;
+}
+.nav3 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav3 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+.nav3 .dropdown-content{
+    display: none;
+}
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #0c1224;
+    color: #1c1c1c;
+    min-width: 150px;
+}
