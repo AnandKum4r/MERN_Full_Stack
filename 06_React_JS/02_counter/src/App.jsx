@@ -11,10 +11,6 @@ function App() {
     } else {
       alert("Counter can not go above 30 !");
     }
-    // // its used for multiple addition at a time
-    // setCounter((preCounter) => preCounter + 1);
-    // setCounter((preCounter) => preCounter + 1);
-    // setCounter((preCounter) => preCounter + 1);
   };
 
   // Function to decrement counter only if it's more than 0
