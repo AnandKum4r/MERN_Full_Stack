@@ -10,24 +10,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const questions = [
     {
-      question: "What is the capital of France?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
-      answer: "Paris",
-    },
-    {
-      question: "Which planet is known as the Red Planet?",
-      choices: ["Mars", "Venus", "Jupiter", "Saturn"],
-      answer: "Mars",
-    },
-    {
-      question: "Who wrote 'Hamlet'?",
+      question: "What does CSS stand for?",
       choices: [
-        "Charles Dickens",
-        "Jane Austen",
-        "William Shakespeare",
-        "Mark Twain",
+        "Cascading Style Sheet",
+        "Colorful Style Sheet",
+        "Computer Style Sheet",
+        "Creative Style Syntax",
       ],
-      answer: "William Shakespeare",
+      answer: "Cascading Style Sheet",
+    },
+    {
+      question: "Which HTML tag is used to define a paragraph?",
+      choices: ["<p>", "<para>", "<paragraph>", "<text>"],
+      answer: "<p>",
+    },
+    {
+      question: "Which property is used to change the background color in CSS?",
+      choices: ["color", "bg-color", "background-color", "background"],
+      answer: "background-color",
+    },
+    {
+      question: "How do you make text bold in HTML?",
+      choices: ["<strong>", "<bold>", "<bld>", "<text-bold>"],
+      answer: "<strong>",
+    },
+    {
+      question: "Which CSS property controls the text size?",
+      choices: ["font-size", "text-style", "text-size", "font-style"],
+      answer: "font-size",
     },
   ];
 
@@ -62,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showQuestion() {
     nextBtn.classList.add("hidden");
     questionText.textContent = questions[currentQuestionIndex].question;
-    choicesList.innerHTML = ""; //clear previous choices
+    choicesList.innerHTML = ""; // Clear previous choices
     questions[currentQuestionIndex].choices.forEach((choice) => {
       const li = document.createElement("li");
       li.textContent = choice;
