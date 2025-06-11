@@ -1,4 +1,4 @@
-/* styles.css */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,81 +6,130 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.container {
-  width: 400px;
   padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1,
-h2,
-h3 {
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1, h2, h3 {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 600;
+  color: #222;
 }
 
+/* Form Styling */
 form {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  gap: 10px;
 }
 
 input[type="text"],
 input[type="number"] {
-  width: 45%;
-  padding: 10px;
-  background-color: #333333;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  outline: none;
-  margin: 3px;
+  flex: 1 1 45%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 15px;
+  transition: border-color 0.3s, background-color 0.3s;
 }
 
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button Styling */
 button {
-  padding: 10px;
-  background-color: #6200ea;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: #fff;
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #3700b3;
+  background-color: #0056b3;
 }
 
+/* Expense List */
 #expense-list {
   list-style-type: none;
   padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #expense-list li {
-  background-color: #333333;
-  padding: 10px;
-  margin-bottom: 10px;
+  background-color: #f5f7fa;
+  padding: 12px 16px;
+  border-left: 4px solid #007bff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+#expense-list li button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto; /* or use a fixed width like 60px if needed */
+  white-space: nowrap;
+  min-width: 55px;
+  text-align: center;
+}
+
+#expense-list li button:hover {
+  background-color: #c82333;
+}
+
+/* Total Display */
 #total {
   text-align: right;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
 }
 
+/* Utility Class */
 .hidden {
   display: none;
 }

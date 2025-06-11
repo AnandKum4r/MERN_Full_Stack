@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     expenses.forEach((expense) => {
       const li = document.createElement("li");
       li.innerHTML = `
-        ${expense.name} - $${expense.amount}
+        ${expense.name} : ₹${expense.amount}
         <button data-id="${expense.id}">Delete</button>
         `;
       expenseList.appendChild(li);
